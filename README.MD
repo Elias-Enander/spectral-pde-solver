@@ -18,13 +18,14 @@ $$ \frac{d \hat{u}_k}{dt} = -D (2\pi k)^2 \hat{u}_k + \hat{g}_k(t) $$
    Verified discrete $L_2$ error norm scaling for spatial derivatives.
 2. **Explicit Stability Analysis:**
    Analyzed and implemented the theoretical stability boundary for RK4 integration in Fourier space. To maintain numerical stability without artificial damping, the time-step is bounded by:
+   
     $$ \Delta t_{\max} = \frac{2.8}{D \pi^2 N^2} $$
 
 ## Results & Visualizations
 
 ![Transient Heat Evolution](waterfall_plot.png)
 
-*Figure 1: Waterfall plot demonstrating the transient evolution of $$u(x,t)$$ subject to a sharp, decaying spatial source term.*
+*Figure 1: Waterfall plot demonstrating the transient evolution of $u(x,t)$ subject to a sharp, decaying spatial source term.*
 
 ## Installation & Running
 
