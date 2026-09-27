@@ -15,22 +15,21 @@ $$ \frac{d \hat{u}_k}{dt} = -D (2\pi k)^2 \hat{u}_k + \hat{g}_k(t) $$
 ## What i found most interesting
 
 1. **Exponential Spectral Convergence:**
-   Verified discrete $L_2$ error norm scaling for spatial derivatives, demonstrating near-machine precision errors bounded solely by grid resolution $N$.
+   Verified discrete $L_2$ error norm scaling for spatial derivatives.
 2. **Explicit Stability Analysis:**
    Analyzed and implemented the theoretical stability boundary for RK4 integration in Fourier space. To maintain numerical stability without artificial damping, the time-step is bounded by:
-   
-   $$ \Delta t_{\max} = \frac{2.8}{D \pi^2 N^2} $$
+    $$ \Delta t_{\max} = \frac{2.8}{D \pi^2 N^2} $$
 
 ## Results & Visualizations
 
 ![Transient Heat Evolution](waterfall_plot.png)
 
-*Figure 1: Waterfall plot demonstrating the transient evolution of $u(x,t)$ subject to a sharp, decaying spatial source term.*
+*Figure 1: Waterfall plot demonstrating the transient evolution of $$u(x,t)$$ subject to a sharp, decaying spatial source term.*
 
 ## Installation & Running
 
 ```bash
-git clone [https://github.com/Elias-Enander/spectral-pde-solver.git](https://github.com/Elias-Enander/spectral-pde-solver.git)
+git clone [Spectral PDE solver](https://github.com/Elias-Enander/spectral-pde-solver.git)
 cd spectral-pde-solver
 pip install -r requirements.txt
 python examples/run_heat_equation.py
